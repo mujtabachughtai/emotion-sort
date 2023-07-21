@@ -1,38 +1,98 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The main container for the app */
 .App {
+  /* Center aligns the text */
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* Makes the container a flexbox */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* Centers the content horizontally */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* Centers the content vertically */
+  align-items: center;
+  /* Sets the height to fill the full viewport */
+  height: 100vh;
+  /* Specifies the font used in the app */
+  font-family: 'Source Sans Pro', sans-serif;
+  /* Sets the background color to Yale Blue */
+  background-color: #00356B;
+  /* Sets the default text color to white */
+  color: #FFFFFF;
+}
+
+/* The content container within the app */
+.App .content {
+  /* Sets a maximum width for the content */
+  max-width: 800px;
+  /* Adds padding around the content */
+  padding: 20px;
+  /* Sets the background color to white */
+  background-color: white;
+  /* Sets the text color to black */
+  color: black;
+  /* Rounds the corners of the content box */
+  border-radius: 5px;
+  /* Adds a light shadow around the content box */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* The paragraph text within the content */
+.App .content p {
+  /* Adds space below the paragraph */
+  margin-bottom: 20px;
+  /* Sets the font size */
+  font-size: 18px;
+}
+
+/* The button within the content */
+.App .content button {
+  /* Sets the button color to Yale Blue */
+  background-color: #0F4D92;
+  /* Removes the default button border */
+  border: none;
+  /* Sets the button text color to white */
   color: white;
+  /* Adds padding around the button text */
+  padding: 15px 32px;
+  /* Centers the button text */
+  text-align: center;
+  /* Removes the default text decoration */
+  text-decoration: none;
+  /* Displays the button inline with text */
+  display: inline-block;
+  /* Sets the font size of the button text */
+  font-size: 16px;
+  /* Adds a margin around the button */
+  margin: 4px 2px;
+  /* Changes the cursor to a pointer on hover */
+  cursor: pointer;
+  /* Rounds the corners of the button */
+  border-radius: 5px;
+  /* Sets the button to span the full width of its parent container */
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* The input section within the content */
+.App .content .input-section {
+  /* Makes the input section a flexbox */
+  display: flex;
+  /* Stacks the flex items vertically */
+  flex-direction: column;
+  /* Centers the flex items horizontally */
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* The input box within the input section */
+.App .content .input-section input {
+  /* Adds space below the input box */
+  margin-bottom: 10px;
+  /* Adds padding inside the input box */
+  padding: 10px;
+  /* Sets the font size in the input box */
+  font-size: 16px;
 }
