@@ -1,10 +1,30 @@
-# Getting Started with Create React App
+# Yale Emotion Beliefs Study
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the codebase for the Yale Emotion Beliefs Study web application! This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is currently being used for scientific research.
+
+The application's primary function is to facilitate a psychological study on people's beliefs about emotions. Participants are shown various words representing emotions and asked to sort them into categories. The data generated from these interactions are then used for further research.
+
+## Getting Started
+
+This application uses Node.js and npm for its runtime and package management respectively. Ensure that you have [Node.js](https://nodejs.org/) and npm installed before proceeding.
+
+To get the application running:
+
+1. Clone this repository: `git clone https://github.com/mujtabachughtai/emotion-sort.git`
+2. Navigate into the application directory: `cd emotion-sort`
+3. Install dependencies: `npm install`
+4. Start the application: `npm start`
+
+Open [http://localhost:3000](http://localhost:3000) to view the application in your browser. The page will automatically reload when you make changes.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run several scripts:
+
+### `npm start`
+
+... (rest of the document remains unchanged) ...
+
 
 ### `npm start`
 
