@@ -5,94 +5,50 @@
   box-sizing: border-box;
 }
 
-/* The main container for the app */
 .App {
-  /* Center aligns the text */
   text-align: center;
-  /* Makes the container a flexbox */
   display: flex;
-  /* Centers the content horizontally */
+  flex-direction: column;
   justify-content: center;
-  /* Centers the content vertically */
   align-items: center;
-  /* Sets the height to fill the full viewport */
   height: 100vh;
-  /* Specifies the font used in the app */
   font-family: 'Source Sans Pro', sans-serif;
-  /* Sets the background color to Yale Blue */
+  font-size: 18px;
   background-color: #00356B;
-  /* Sets the default text color to white */
-  color: #FFFFFF;
+  color: black;
 }
 
-/* The content container within the app */
-.App .content {
-  /* Sets a maximum width for the content */
+.input-component,
+.instructions-component {
+  width: 80%;
   max-width: 800px;
-  /* Adds padding around the content */
+  background-color: #fff;
   padding: 20px;
-  /* Sets the background color to white */
-  background-color: white;
-  /* Sets the text color to black */
-  color: black;
-  /* Rounds the corners of the content box */
-  border-radius: 5px;
-  /* Adds a light shadow around the content box */
+  margin: 20px auto;
+  border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* The paragraph text within the content */
-.App .content p {
-  /* Adds space below the paragraph */
-  margin-bottom: 20px;
-  /* Sets the font size */
-  font-size: 18px;
-}
-
-/* The button within the content */
-.App .content button {
-  /* Sets the button color to Yale Blue */
-  background-color: #0F4D92;
-  /* Removes the default button border */
-  border: none;
-  /* Sets the button text color to white */
-  color: white;
-  /* Adds padding around the button text */
-  padding: 15px 32px;
-  /* Centers the button text */
-  text-align: center;
-  /* Removes the default text decoration */
-  text-decoration: none;
-  /* Displays the button inline with text */
-  display: inline-block;
-  /* Sets the font size of the button text */
-  font-size: 16px;
-  /* Adds a margin around the button */
-  margin: 4px 2px;
-  /* Changes the cursor to a pointer on hover */
-  cursor: pointer;
-  /* Rounds the corners of the button */
-  border-radius: 5px;
-  /* Sets the button to span the full width of its parent container */
+.input-component input {
   width: 100%;
-}
-
-/* The input section within the content */
-.App .content .input-section {
-  /* Makes the input section a flexbox */
-  display: flex;
-  /* Stacks the flex items vertically */
-  flex-direction: column;
-  /* Centers the flex items horizontally */
-  align-items: center;
-}
-
-/* The input box within the input section */
-.App .content .input-section input {
-  /* Adds space below the input box */
-  margin-bottom: 10px;
-  /* Adds padding inside the input box */
   padding: 10px;
-  /* Sets the font size in the input box */
-  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.input-component button,
+.instructions-component button {
+  background-color: #00356B;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.input-component button:hover,
+.instructions-component button:hover {
+  background-color: #00356B;
 }
