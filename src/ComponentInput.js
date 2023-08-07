@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function InputComponent({ question, placeholder, variableName, onNext }) {
+function ComponentInput({ question, placeholder, variableName, onNext }) {
   // Create a state variable for the input value
   const [inputValue, setInputValue] = useState('');
 
@@ -16,13 +16,30 @@ function InputComponent({ question, placeholder, variableName, onNext }) {
     onNext(inputValue, variableName);
   };
 
+  // Create a function to handle key press
+  const handleKeyPress = (event) => {
+    // Check if the key pressed is 'Enter'
+    if (event.key === 'Enter') {
+      // Prevent form submission
+      event.preventDefault();
+      // Trigger the click event
+      handleClick();
+    }
+  };
+
   return (
-    <div className="input-component">
+    <div className="component-input">
       <p>{question}</p>
-      <input type="text" placeholder={placeholder} value={inputValue} onChange={handleInputChange} />
+      <input 
+        type="text" 
+        placeholder={placeholder} 
+        value={inputValue} 
+        onChange={handleInputChange} 
+        onKeyPress={handleKeyPress}
+      />
       <button onClick={handleClick}>Next</button>
     </div>
   );
 }
 
-export default InputComponent;
+export default ComponentInput;
